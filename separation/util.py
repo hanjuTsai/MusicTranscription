@@ -42,9 +42,9 @@ def bss_eval(mixed_wav, src1_wav, src2_wav, pred_src1_wav, pred_src2_wav):
     return nsdr, sir, sar, len
 
 def bss_eval_sdr(src1_wav, pred_src1_wav):
-        len_cropped = pred_src1_wav.shape[0]
-        src1_wav = src1_wav[:len_cropped]
+    len_cropped = pred_src1_wav.shape[0]
+    src1_wav = src1_wav[:len_cropped]
 
-        sdr, _, _, _ = bss_eval_sources(src1_wav,
-                                            pred_src1_wav, compute_permutation=True)
-        return sdr
+    sdr, _, _, _ = bss_eval_sources(src1_wav,
+                                        pred_src1_wav, compute_permutation=True)
+    return sdr

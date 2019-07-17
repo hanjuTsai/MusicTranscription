@@ -50,14 +50,12 @@ for (root, dirs, files) in walk(NetConfig_MIR_1K.DATA_PATH):
 
 
 print('Number of training examples : {}'.format(trainNum))
-
-trainMixedPath = os.path.join(NetConfig_MIR_1K.PICKLE_PATH,'trainMixed.pickle')
-trainSrc1Path = os.path.join(NetConfig_MIR_1K.PICKLE_PATH, 'trainSrc1.pickle')
-trainSrc2Path = os.path.join(NetConfig_MIR_1K.PICKLE_PATH, 'trainSrc2.pickle')
-
-with open(trainMixedPath,'wb') as f:
-    pickle.dump(trainMixed, f)    
-with open(trainSrc1Path,'wb') as f:
-    pickle.dump(trainSrc1, f)
-with open(trainSrc2Path,'wb') as f:
-    pickle.dump(trainSrc2, f)
+with open(os.path.join(NetConfig_MIR_1K.PICKLE_PATH,'train.pickle'), 'wb') as f:
+    data = (
+        trainMixed,
+        trainSrc1,
+        trainSrc2,
+        trainNum,
+        batchSize
+    )
+    pickle.dump(data, f)
