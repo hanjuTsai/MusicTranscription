@@ -1,7 +1,7 @@
 # Music Transcription
 
 ## Web view
-<img src="/img/web.gif" width="400" />
+<img src="/img/web.gif"/>
 
 ## Result
 
