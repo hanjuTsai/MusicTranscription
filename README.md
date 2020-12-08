@@ -1,14 +1,16 @@
 # Music Transcription
 
 ## Web view
-<img src="/img/web.gif"/>
+<img src="/src/web.gif"/>
 
 ## Result
+[Original Audio (Click me)](/src/orig.m4a)
+[Separated Vocal Source (Click me)](/src/vocal.m4a)
+[Separated Piano Source (Click me)](/src/piano.m4a)
 
 ### Music sheets
 To verify the accuracy of our transcription, we use MuseScore to auto generate sound based on our sheet music. As you can see, the piano sound is extremely similar to original one. Hence, our tool indeed help people save time transcribing the whole songs, instead they can get a rough one and spent only few time on revising.
 
-[Original Audio (Click me)](/img/orig.mp3)
 
 [![Watch the video](https://i.imgur.com/AwsfRg3.jpg)](https://www.youtube.com/watch?v=IQyhDn5_QeY)
 
