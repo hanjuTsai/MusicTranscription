@@ -1,0 +1,48 @@
+{
+  "apps" : [{
+    "name"            : "MUSIC SHEET",
+    "cwd"             : "./client",
+    "script"          : "npm",
+    "args"            : "run serve",
+    "watch"           : false,
+    "node_args"       : ["--max-old-space-size=2048"],
+    "merge_logs"      : false,
+    "exec_interpreter": "node",
+    "exec_mode"       : "cluster",
+    "instances"       : 1,
+    "log_date_format" : "YYYY-MM-DD HH:mm:ss.SSS",
+    "autorestart"         : true,
+    "max_memory_restart"  : "2G",
+    "env": {
+      "NODE_ENV"      : "production",
+      "BLUEBIRD_LONG_STACK_TRACES": 0,
+      "BLUEBIRD_WARNINGS": 0,
+      "BLUEBIRD_DEBUG": 0
+    },
+    "env_compliance"  : {
+      "NODE_ENV"      : "development"
+    }
+  },
+  {
+    "name"            : "MUSIC SHEET-api",
+    "script"          : "./server/develop.js",
+    "watch"           : false,
+    "node_args"       : ["--max-old-space-size=2048"],
+    "merge_logs"      : false,
+    "exec_interpreter": "node",
+    "exec_mode"       : "cluster",
+    "instances"       : 0,
+    "log_date_format" : "YYYY-MM-DD HH:mm:ss.SSS",
+    "autorestart"         : true,
+    "max_memory_restart"  : "2G",
+    "env": {
+      "NODE_ENV"      : "production",
+      "BLUEBIRD_LONG_STACK_TRACES": 0,
+      "BLUEBIRD_WARNINGS": 0,
+      "BLUEBIRD_DEBUG": 0
+    },
+    "env_compliance"  : {
+      "NODE_ENV"      : "development"
+    }
+  }]
+}
