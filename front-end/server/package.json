@@ -22,7 +22,7 @@
     "express-session": "^1.17.0",
     "googleapis": "^39.2.0",
     "http": "0.0.0",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "method-override": "^3.0.0",
     "moment": "^2.24.0",
     "mongoose": "^5.7.6",
