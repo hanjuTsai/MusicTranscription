@@ -24,7 +24,7 @@
     "http": "0.0.0",
     "jspdf": "^1.5.3",
     "method-override": "^3.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.7.6",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
