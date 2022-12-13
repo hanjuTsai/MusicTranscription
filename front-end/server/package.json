@@ -18,7 +18,7 @@
     "cors": "^2.8.5",
     "ejs-locals-vadorequest": "^2.0.2",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.0",
     "googleapis": "^39.2.0",
     "http": "0.0.0",
